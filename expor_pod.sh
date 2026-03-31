@@ -16,3 +16,15 @@ kubectl expose pod meu-nginx
 
 #teste basico
 kubectl port-forward svc/meu-nginx 8080:80
+
+#extra - apagar td
+kubectl get all
+
+kubectl get pod,service
+
+kubectl get pod,svc
+
+kubectl delete -f pod-template.yaml
+kubectl delete service nginx
+kubectl delete -f pod-template.yaml
+kubectl delete service meu-nginx
