@@ -9,14 +9,14 @@ spec:
   selector:
     matchLabels:
       app: nginx-deployment
-  strategy: {} #Rolling Update
+  strategy: {}
   template:
     metadata:
       labels:
         app: nginx-deployment
     spec:
       containers:
-      - image: nginx
+      - image: nginx:1.16.0
         name: nginx
         resources:
           limits:
